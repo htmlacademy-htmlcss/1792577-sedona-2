@@ -5,8 +5,154 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
-
+    <div class="page-container">
+    <header class="header">
+        <div class="header__wrapper">
+          <a class="header__logo" href="#">
+            <img class="header__logo-img" alt="Логотип сайта" src="#">
+          </a>
+          <nav class="header__nav">
+            <ul class="header__nav-item ">
+              <li class="header__nav-list header__nav-list--active">
+                <a class="header__nav-link link">Главная</a>
+              </li>
+              <li class="header__nav-list">
+                <a class="header__nav-link link">О Седоне</a>
+              </li>
+              <li class="header__nav-list">
+                <a class="header__nav-link link">Гостиницы</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__user-menu">
+            <ul class="header__user-menu-list">
+              <li class="header__user-menu-item">
+                <span class="visually-hidden"> Поиск</span>
+              </li>
+              <li class="header__user-menu-item">
+                <span class="visually-hidden">Избранное</span>
+              </li>
+              <li class="header__user-menu-item header__user-menu-button">
+                <a class="header__user-menu-link link">Хочу сюда!</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </header>
+  </div>
+  <main class="main">
+    <div class="main__wrapper">
+      <div class="main__greetings-container">
+        <img class="main__greetings-img" src="#" alt="Приветствующая надпись на фоне каньена Седоны">
+        <h1 class="visually-hidden">Седона</h1>
+      </div>
+      <div class="main__discription-container">
+        <h2 class="main__discription-header title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <p class="main__discription-text text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+      </div>
+      <section class="main__reason">
+        <div class="main__reason-box main__reason-box-with-photo">
+          <p class="main__reason-box-title  title">Настоящий городок</p>
+          <p class="main__reason-box-text text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+          <img src="#" alt="Фотография улицы Седоны">
+        </div>
+        <div class="main__reason-box">
+          <p class="main__reason-box-title title">Небольшая
+            площадь</p>
+          <p class="main__reason-box- text">Все достопримечательности находятся очень близко</p>
+        </div>
+        <div class="main__reason-box">
+          <p class="main__reason-box-title title">Красивая
+            дорога</p>
+          <p class="main__reason-box-text text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        </div>
+        <div class="main__reason-box ">
+          <p class="main__reason-box-title title">Мало
+            туристов</p>
+          <p class="main__reason-box-text text">Большинство едет в Гранд Каньон и толпится там</p>
+        </div>
+        <div class="main__reason-box main__reason-box-with-photo">
+          <p class="main__reason-box-title title">Там есть
+            мост дьявола</p>
+          <p class="main__reason-box-text text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+          <img src="#" alt="Фотография каньона Седоны">
+        </div>
+      </section>
+      <div class="main__discription-container">
+        <h2 class="main__discription-title title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
+        <p class="main__discription-text text">Опытный персонал и качественное обслуживание!</p>
+      </div>
+      <section class="recomendation">
+        <div class="recomendation__wrapper"></div>
+        <div class="recomendation__box">
+          <svg></svg>
+          <p class="recomendation__title title">Жильё</p>
+          <p class="recomendation__text text">Рекомендуем пожить в настоящем мотеле,
+            всё как в кино!</p>
+        </div>
+        <div class="recomendation-box">
+          <svg></svg>
+          <p class="recomendation__title title">Еда</p>
+          <p class="recomendation__text text">Всегда заказывайте
+            топовый фирменный бургер, вы не разочаруетесь!</p>
+        </div>
+        <div class="recomendation-box">
+          <svg></svg>
+          <p class="recomendation__title title">Сувениры</p>
+          <p class="recomendation__text text">Не только китайского,
+            но и настоящего местного производства!</p>
+        </div>
+      </section>
+      <section class="surch">
+        <p class="surch__title title">Заинтересовались?</p>
+        <p class="surch__text text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <a class="surtch__link link" href="#">Поиск гостиницы в Седоне</a>
+      </section>
+      <section class="subscription">
+        <div class="subscription__wrapper">
+          <p class="subscription__title title">Подпишитесь на рассылку</p>
+          <p class="subscription__text text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <form class="subscription__form" action="#">
+            <div class="subscription__box">
+                <label class="visually-hidden" for="e-mail">Введите e-mail</label>
+                <input class="subscription__email" type="text" name="Ваш e-mail" placeholder="Ваш e-mail">
+                <button class="subscription__button button" type="submit">Подписаться</button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer__wrapper">
+          <ul class="footer__social-list">
+            <li class="footer__social-item">
+              <a class="footer__social-link link" href="#">
+                <span class="visually-hidden">Мы Вконтакте</span>
+                <svg></svg>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link link" href="#">
+                <span class="visually-hidden">Мы в телеграмм</span>
+                <svg></svg>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link link" href="#">
+                <span class="visually-hidden">Мы на YouTube</span>
+                <svg></svg>
+              </a>
+            </li>
+          </ul>
+          <a class="footer__phone phone link" href="+78128121212">
+            <span class="visually-hidden">Наш номер</span>
+            +7(812) 812-12-12</a>
+          <a class="footer__web" href="#">
+            <span class="visually-hidden">Наш сайт</span>
+            <svg class="footer__web-logo"></svg>
+          </a>
+        </div>
+      </footer>
+    </div>
+  </main>
   </body>
 </html>
