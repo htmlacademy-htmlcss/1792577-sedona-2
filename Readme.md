@@ -1,7 +1,8 @@
 # Личный проект «Седона»
 
 * Студент: [Лилиана Леднёва](https://up.htmlacademy.ru/htmlcss-individual/2/user/1792577).
-* Наставник: `Неизвестно`.
+* Наставник: [Евгения Подопригора](https://htmlacademy.ru/profile/id2387199).
+* Сайт [Мой учебный проект Sedona]( https://lilyhort.github.io/1792577-sedona-2/).
 
 ---
 
