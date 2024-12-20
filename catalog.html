@@ -65,19 +65,19 @@
                   <li class="checkbox__item item">
                     <label class="checkbox__label">
                     <input class="checkbox__input input" type="checkbox" name="swimmingpool" checked>
-                    <p class="checkbox__text text">Бассейн</p>
+                    Бассейн
                     </label>
                   </li>
                   <li class="checkbox__item item">
                     <label class="checkbox__label">
                     <input class="checkbox__input input" type="checkbox" name="parking" checked>
-                    <p class="checkbox__text text">Парковка</p>
+                    Парковка
                     </label>
                   </li>
                   <li class="checkbox__item item">
                     <label class="checkbox__label">
                     <input class="checkbox__input input" type="checkbox" name="wi-fi">
-                    <p class="checkbox__text text">Wi-Fi</p>
+                    Wi-Fi
                     </label>
                   </li>
                 </ul>
@@ -87,20 +87,20 @@
                 <ul class="radio__list list">
                   <li class="radio__item">
                     <label class="radio__label">
-                      <input class="radio__input" type="radio" name="hotel" checked>
-                      <p class="radio__text text">Гостиница</p>
+                      <input class="radio__input" type="radio" name="kind" value="hotel" checked>
+                      Гостиница
                     </label>
                   </li>
                   <li class="radio__item">
                     <label class="radio__label">
-                      <input class="radio__input" type="radio" name="motel">
-                      <p class="radio__text text">Мотель</p>
+                      <input class="radio__input" type="radio" value="motel" name="kind">
+                      Мотель
                     </label>
                   </li>
                   <li class="radio__item">
                     <label class="radio__label">
-                      <input class="radio__input" type="radio" name="apartment">
-                      <p class="radio__text text">Аппартаменты</p>
+                      <input class="radio__input" type="radio" value="apartment" name="kind">
+                      Аппартаменты
                     </label>
                   </li>
                 </ul>
@@ -111,8 +111,9 @@
                 <input class="slider__input slider__input-min" type="number" placeholder="0" name="slider-min">
                 <input class="slider__input slider__input-max" type="number" placeholder="9000" name="slider-max">
                 </div>
+                <input type="range" min="0" max="9000" value="1">
               </fieldset>
-              <div class="send send__form hotel__form-button">
+              <div class="send hotel__form-button">
                 <span class="visually-hidden">Отправить или сбросить результат</span>
                 <button class="send__button send__button-submit button" type="submit">Применить</button>
                 <button class="send__button  send__button-reset button" type="reset">Сбросить</button>
@@ -121,7 +122,7 @@
           </div>
         </section>
         <section class="filter">
-          <p class="filter__title title"> Найдено гостиниц: <span class="filter__result-surtch">38</span></p>
+          <h2 class="filter__title title"> Найдено гостиниц: <span class="filter__result-surtch">38</span></h2>
           <select class="filter__option" name="sort">
             <option class="filter__option-filter" value="cheap">Сначала дешевые</option>
             <option class="filter__option-filter" value="expensive">Сначала дорогие</option>
@@ -151,7 +152,7 @@
           <div class="hotel-list__wrapper">
             <div class="hotel-card">
               <img class="hotel-card__img" src="#" alt="">
-              <p class="hotel-card__title title">Amara Resort & Spa</p>
+              <h3 class="hotel-card__title title">Amara Resort & Spa</h3>
               <p class="hotel-card__type">Гостиница</p>
               <p class="hotel-card__price">От 4000 ₽</p>
               <a class="hotel-card__details">Подробнее</a>
@@ -163,7 +164,7 @@
             </div>
             <div class="hotel-card">
               <img class="hotel-card__img" src="#" alt="">
-              <p class="hotel-card__title title">Villas at Poco Diablo</p>
+              <h3 class="hotel-card__title title">Villas at Poco Diablo</h3>
               <p class="hotel-card__type">Гостиница</p>
               <p class="hotel-card__price">От 5000 ₽</p>
               <a class="hotel-card__details">Подробнее</a>
@@ -175,7 +176,7 @@
             </div>
             <div class="hotel-card">
               <img class="hotel-card__img" src="#" alt="">
-              <p class="hotel-card__title title">Desert Quail Inn</p>
+              <h3 class="hotel-card__title title">Desert Quail Inn</h3>
               <p class="hotel-card__type">Гостиница</p>
               <p class="hotel-card__price">От 2500 ₽</p>
               <a class="hotel-card__details">Подробнее</a>
@@ -187,7 +188,7 @@
             </div>
             <div class="hotel-card">
               <img class="hotel-card__img" src="#" alt="">
-              <p class="hotel-card__title title">Гостиница</p>
+              <h3 class="hotel-card__title title">GreenTree Inn</h3>
               <p class="hotel-card__type">Гостиница</p>
               <p class="hotel-card__price">От 1500 ₽</p>
               <a class="hotel-card__details">Подробнее</a>
@@ -201,7 +202,7 @@
         </section>
         <section class="pagination">
           <div class="pagination__wrapper">
-            <span class="visually-hidden"> Пагинация</span>
+            <h2 class="visually-hidden"> Пагинация</h2>
             <ul class="pagination__list">
               <li class="pagination__item">
                 <a class="pagination__link" href="#">
@@ -239,11 +240,11 @@
       <div class="footer__wrapper">
         <section class="footer__subscription subscription">
           <div class="subscription__wrapper">
-            <p class="subscription__title title">Подпишитесь на рассылку</p>
+            <h2 class="subscription__title title">Подпишитесь на рассылку</h2>
             <p class="subscription__text text">Только полезная информация и никакого спама, честное бойскаутское!</p>
             <form class="subscription__form form" action="#">
               <div class="subscription__box">
-                <label class="visually-hidden" for="e-mail">Введите e-mail</label>
+                <label class="visually-hidden">Введите e-mail</label>
                 <input class="subscription__email" type="text" name="Ваш e-mail" placeholder="Ваш e-mail">
                 <button class="subscription__button button" type="submit">Подписаться</button>
               </div>
