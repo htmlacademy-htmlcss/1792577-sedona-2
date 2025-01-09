@@ -16,7 +16,7 @@
         </a>
         <nav class="header__nav">
           <ul class="header__nav-item ">
-            <li class="header__nav-list header__nav-list--active">
+            <li class="header__nav-list">
               <a class="header__nav-link link" href="index.html">Главная</a>
             </li>
             <li class="header__nav-list">
@@ -30,13 +30,17 @@
         <div class="header__user-menu">
           <ul class="header__user-menu-list">
             <li class="header__user-menu-item">
+              <a class="header__user-menu-link user-search" href="#">
               <span class="visually-hidden"> Поиск</span>
+              </a>
             </li>
             <li class="header__user-menu-item">
+              <a class="header__user-menu-link user-favorites" href="#">
               <span class="visually-hidden">Избранное</span>
+              </a>
             </li>
             <li class="header__user-menu-item header__user-menu-button">
-              <a class="header__user-menu-link link">Хочу сюда!</a>
+              <a class="header__user-menu-link link" href="#">Хочу сюда!</a>
             </li>
           </ul>
         </div>
@@ -49,15 +53,15 @@
           <div class="hotel__wrapper">
             <h1 class="hotel__title title">Гостиницы Седоны</h1>
             <ul class="hotel__breadcrumbs-list list">
-              <li class="hotel__breadcrumbs-item item"><a class="hotel__breadcrumbs-link link" href="#">
+              <li class="hotel__breadcrumbs-item item">
                   <span class="visually-hidden">На главную</span>
                   <svg></svg>
-                </a></li>
+                </li>
               <li class="hotel__breadcrumbs-item item"><a class="hotel__breadcrumbs-link link" href="#">
                   Гостиницы
                 </a></li>
             </ul>
-            <form class="hotel__form form" action="#">
+            <form class="hotel__form form" action="https://echo.htmlacademy.ru">
               <span class="visually-hidden">Фильтр гостиниц</span>
               <fieldset class="checkbox hotel__form-checkbox">
                 <legend class="checkbox__title title">Инфраструктура:</legend>
@@ -150,12 +154,13 @@
         </section>
         <section class="hotel-list">
           <div class="hotel-list__wrapper">
+            <h2 class="visually-hidden">Найденые отели</h2>
             <div class="hotel-card">
               <img class="hotel-card__img" src="#" alt="">
               <h3 class="hotel-card__title title">Amara Resort & Spa</h3>
               <p class="hotel-card__type">Гостиница</p>
               <p class="hotel-card__price">От 4000 ₽</p>
-              <a class="hotel-card__details">Подробнее</a>
+              <a class="hotel-card__details" href="#">Подробнее</a>
               <button class="hotel-card__button button" type="button">В избранное</button>
               <div class="hotel-card__rating">
                 <span class="hotel-card__rating-svg"><svg></svg></span>
@@ -167,7 +172,7 @@
               <h3 class="hotel-card__title title">Villas at Poco Diablo</h3>
               <p class="hotel-card__type">Гостиница</p>
               <p class="hotel-card__price">От 5000 ₽</p>
-              <a class="hotel-card__details">Подробнее</a>
+              <a class="hotel-card__details" href="#">Подробнее</a>
               <button class="hotel-card__button hotel-card__button--active button" type="button">В избранном</button>
               <div class="hotel-card__rating">
                 <span class="hotel-card__rating-svg"><svg></svg></span>
@@ -179,7 +184,7 @@
               <h3 class="hotel-card__title title">Desert Quail Inn</h3>
               <p class="hotel-card__type">Гостиница</p>
               <p class="hotel-card__price">От 2500 ₽</p>
-              <a class="hotel-card__details">Подробнее</a>
+              <a class="hotel-card__details" href="#">Подробнее</a>
               <button class="hotel-card__button button" type="button">В избранное</button>
               <div class="hotel-card__rating">
                 <span class="hotel-card__rating-svg"><svg></svg></span>
@@ -191,7 +196,7 @@
               <h3 class="hotel-card__title title">GreenTree Inn</h3>
               <p class="hotel-card__type">Гостиница</p>
               <p class="hotel-card__price">От 1500 ₽</p>
-              <a class="hotel-card__details">Подробнее</a>
+              <a class="hotel-card__details" href="#">Подробнее</a>
               <button class="hotel-card__button button" type="button">В избранное</button>
               <div class="hotel-card__rating">
                 <span class="hotel-card__rating-svg"><svg></svg></span>
@@ -204,10 +209,8 @@
           <div class="pagination__wrapper">
             <h2 class="visually-hidden"> Пагинация</h2>
             <ul class="pagination__list">
-              <li class="pagination__item">
-                <a class="pagination__link" href="#">
+              <li class="pagination__item pagination__item--active">
                   1
-                </a>
               </li>
               <li class="pagination__item">
                 <a class="pagination__link" href="#">
@@ -242,10 +245,10 @@
           <div class="subscription__wrapper">
             <h2 class="subscription__title title">Подпишитесь на рассылку</h2>
             <p class="subscription__text text">Только полезная информация и никакого спама, честное бойскаутское!</p>
-            <form class="subscription__form form" action="#">
+            <form class="subscription__form form" action="https://echo.htmlacademy.ru">
               <div class="subscription__box">
-                <label class="visually-hidden">Введите e-mail</label>
-                <input class="subscription__email" type="text" name="Ваш e-mail" placeholder="Ваш e-mail">
+                <label class="visually-hidden" for="e-mail">Введите e-mail</label>
+                <input class="subscription__email" type="text" id="e-mail" name="e-mail" placeholder="Ваш e-mail">
                 <button class="subscription__button button" type="submit">Подписаться</button>
               </div>
             </form>
@@ -254,19 +257,19 @@
         <div class="social footer__social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link link" href="https://vk.com/htmlacademy">
+              <a class="social__link link" href="https://vk.com/htmlacademy" target="_blank" >
                 <span class="visually-hidden">Мы Вконтакте</span>
                 <svg></svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link link" href="https://t.me/htmlacademy">
+              <a class="social__link link" href="https://t.me/htmlacademy" target="_blank" >
                 <span class="visually-hidden">Мы в телеграмм</span>
                 <svg></svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link link" href="https://www.youtube.com/user/htmlacademyru">
+              <a class="social__link link" href="https://www.youtube.com/user/htmlacademyru" target="_blank" >
                 <span class="visually-hidden">Мы на YouTube</span>
                 <svg></svg>
               </a>
@@ -274,12 +277,11 @@
           </ul>
         </div>
         <div class="phone footer__phone">
-          <a class="phone__link link" href="+78128121212">
-            <span class="visually-hidden">Наш номер</span>
+          <a class="phone__link link" href="tel:+78128121212">
             +7(812) 812-12-12</a>
         </div>
         <div class="web footer__web">
-          <a class="web__link link" href="https://htmlacademy.ru/profile/id1792577">
+          <a class="web__link link" href="https://htmlacademy.ru">
             <span class="visually-hidden">Наш сайт</span>
             <svg class="footer__web-logo"></svg>
           </a>
