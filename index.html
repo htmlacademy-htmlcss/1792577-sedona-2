@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="style/style.css">
 </head>
 
 <body>
@@ -15,20 +16,20 @@
           <img class="header__logo-img" alt="Логотип сайта" src="image/logo.svg" width="138" height="64">
         </a>
         <nav class="header__nav">
-          <ul class="header__nav-item ">
-            <li class="header__nav-list header__nav-list--active">
+          <ul class="header__nav-list list ">
+            <li class="header__nav-item header__nav-item--active">
               <a class="header__nav-link header__nav-link--active link" href="#">Главная</a>
             </li>
-            <li class="header__nav-list">
+            <li class="header__nav-item">
               <a class="header__nav-link link" href="#">О Седоне</a>
             </li>
-            <li class="header__nav-list">
+            <li class="header__nav-item">
               <a class="header__nav-link link" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
         </nav>
         <div class="header__user-menu">
-          <ul class="header__user-menu-list">
+          <ul class="header__user-menu-list list">
             <li class="header__user-menu-item">
               <a class="header__user-menu-link user-search">
                 <span class="visually-hidden">Поиск</span>
@@ -80,7 +81,7 @@
           <div class="main__reason-box">
             <h3 class="main__reason-box-title title">Небольшая
               площадь</h3>
-            <p class="main__reason-box- text">Все достопримечательности находятся очень близко</p>
+            <p class="main__reason-box-text text">Все достопримечательности находятся очень близко</p>
           </div>
           <div class="main__reason-box">
             <h3 class="main__reason-box-title title">Красивая
@@ -107,17 +108,17 @@
           <h2 class="visually-hidden">Наши рекомендации о Седоне</h2>
           <div class="recomendation__wrapper"></div>
           <div class="recomendation__box">
-            <h3 class="recomendation__title title">Жильё</h3>
+            <h3 class="recomendation__title title home">Жильё</h3>
             <p class="recomendation__text text">Рекомендуем пожитьв настоящем мотеле,
               всё как в кино!</p>
           </div>
           <div class="recomendation-box">
-            <h3 class="recomendation__title title">Еда</h3>
+            <h3 class="recomendation__title title food">Еда</h3>
             <p class="recomendation__text text">Всегда заказывайте
               топовый фирменный бургер, вы не разочаруетесь!</p>
           </div>
           <div class="recomendation-box">
-            <h3 class="recomendation__title title">Сувениры</h3>
+            <h3 class="recomendation__title title present">Сувениры</h3>
             <p class="recomendation__text text">Не только китайского,
               но и настоящего местного производства!</p>
           </div>
@@ -134,7 +135,7 @@
     <!--Подвал-->
     <footer class="footer">
       <div class="footer__wrapper">
-        <section class="footer__subscription subscription">
+        <section class="footer__subscription footer__subscription-index subscription">
           <div class="subscription__wrapper">
             <h2 class="subscription__title title">Подпишитесь на рассылку</h2>
             <p class="subscription__text text">Только полезная информация и никакого спама, честное бойскаутское!</p>
@@ -149,7 +150,7 @@
           </div>
         </section>
         <div class="social footer__social">
-          <ul class="social__list">
+          <ul class="social__list list">
             <li class="social__item">
               <a class="social__link link" href="https://vk.com/htmlacademy" target="_blank">
                 <span class="visually-hidden">Мы Вконтакте</span>

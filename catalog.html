@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="style/style.css">
 </head>
 
 <body>
@@ -15,20 +16,20 @@
           <img class="header__logo-img" alt="Логотип сайта" src="image/logo.svg" width="138" height="64">
         </a>
         <nav class="header__nav">
-          <ul class="header__nav-item ">
-            <li class="header__nav-list">
+          <ul class="header__nav-list list">
+            <li class="header__nav-item">
               <a class="header__nav-link link" href="index.html">Главная</a>
             </li>
-            <li class="header__nav-list">
+            <li class="header__nav-item">
               <a class="header__nav-link link" href="#">О Седоне</a>
             </li>
-            <li class="header__nav-list">
-              <a class="header__nav-link header__nav-link--active link" href="#">Гостиницы</a>
+            <li class="header__nav-item header__nav-item--active">
+              <a class="header__nav-link link" href="#">Гостиницы</a>
             </li>
           </ul>
         </nav>
         <div class="header__user-menu">
-          <ul class="header__user-menu-list">
+          <ul class="header__user-menu-list list">
             <li class="header__user-menu-item">
               <a class="header__user-menu-link user-search">
                 <span class="visually-hidden">Поиск</span>
@@ -66,8 +67,7 @@
             <h1 class="hotel__title title">Гостиницы Седоны</h1>
             <ul class="hotel__breadcrumbs-list list">
               <li class="hotel__breadcrumbs-item item">
-                <span class="visually-hidden">На главную</span>
-                <svg></svg>
+                <a class="hotel__breadcrumbs-link"><span class="visually-hidden">На главную</span></a>
               </li>
               <li class="hotel__breadcrumbs-item item"><a class="hotel__breadcrumbs-link link" href="#">
                   Гостиницы
@@ -122,7 +122,7 @@
                 </ul>
               </fieldset>
               <fieldset class="slider hotel__form-slider">
-                <legend class="slider__title">Стоимость, ₽:</legend>
+                <legend class="slider__title title">Стоимость, ₽:</legend>
                 <div class="slider__choose">
                   <input class="slider__input slider__input-min" type="number" placeholder="0" name="slider-min">
                   <input class="slider__input slider__input-max" type="number" placeholder="9000" name="slider-max">
@@ -145,7 +145,7 @@
             <option class="filter__option-filter" value="rating">Сначала выше рейтинг</option>
           </select>
           <div class="filter__show">
-            <ul class="filter__show-list">
+            <ul class="filter__show-list list">
               <li class="filter__show-item filter__show-item--active">
                 <button class="filter__show-button" type="button">
                 </button>
@@ -168,10 +168,10 @@
               <img class="hotel-card__img" src="image/hotel-catalog/amara.jpg" alt="Отель Amara Resort & Spa "
                 width="300" height="212">
               <h3 class="hotel-card__title title">Amara Resort & Spa</h3>
-              <p class="hotel-card__type">Гостиница</p>
-              <p class="hotel-card__price">От 4000 ₽</p>
-              <a class="hotel-card__details" href="#">Подробнее</a>
-              <button class="hotel-card__button button" type="button">В избранное</button>
+              <p class="hotel-card__type hotel-card__text">Гостиница</p>
+              <p class="hotel-card__price hotel-card__text">От 4000 ₽</p>
+              <a class="hotel-card__details hotel-card__button" href="#">Подробнее</a>
+              <button class="hotel-card__button hotel-card__button-add button" type="button">В избранное</button>
               <div class="hotel-card__rating">
                 <span class="hotel-card__rating-svg"></span>
                 <p class="hotel-card__rating-text">Рейтинг: 8,5</p>
@@ -181,10 +181,10 @@
               <img class="hotel-card__img" src="image/hotel-catalog/villas.jpg" alt="Отель Villas at Poco Diablo"
                 width="300" height="212">
               <h3 class="hotel-card__title title">Villas at Poco Diablo</h3>
-              <p class="hotel-card__type">Гостиница</p>
-              <p class="hotel-card__price">От 5000 ₽</p>
-              <a class="hotel-card__details" href="#">Подробнее</a>
-              <button class="hotel-card__button hotel-card__button--active button" type="button">В избранном</button>
+              <p class="hotel-card__type hotel-card__text">Гостиница</p>
+              <p class="hotel-card__price hotel-card__text">От 5000 ₽</p>
+              <a class="hotel-card__details hotel-card__button" href="#">Подробнее</a>
+              <button class="hotel-card__button hotel-card__button-add hotel-card__button-add--active button" type="button">В избранном</button>
               <div class="hotel-card__rating">
                 <span class="hotel-card__rating-svg"></span>
                 <p class="hotel-card__rating-text">Рейтинг: 9,2</p>
@@ -194,10 +194,10 @@
               <img class="hotel-card__img" src="image/hotel-catalog/desert.jpg" alt="Отель Desert Quail Inn" width="300"
                 height="212">
               <h3 class="hotel-card__title title">Desert Quail Inn</h3>
-              <p class="hotel-card__type">Гостиница</p>
-              <p class="hotel-card__price">От 2500 ₽</p>
-              <a class="hotel-card__details" href="#">Подробнее</a>
-              <button class="hotel-card__button button" type="button">В избранное</button>
+              <p class="hotel-card__type hotel-card__text">Гостиница</p>
+              <p class="hotel-card__price hotel-card__text">От 2500 ₽</p>
+              <a class="hotel-card__detailshotel-card__button" href="#">Подробнее</a>
+              <button class="hotel-card__button hotel-card__button-add button" type="button">В избранное</button>
               <div class="hotel-card__rating">
                 <span class="hotel-card__rating-svg"></span>
                 <p class="hotel-card__rating-text">Рейтинг: 6,9</p>
@@ -207,10 +207,10 @@
               <img class="hotel-card__img" src="image/hotel-catalog/greentree.jpg" alt="Отель GreenTree Inn" width="300"
                 height="212">
               <h3 class="hotel-card__title title">GreenTree Inn</h3>
-              <p class="hotel-card__type">Гостиница</p>
-              <p class="hotel-card__price">От 1500 ₽</p>
-              <a class="hotel-card__details" href="#">Подробнее</a>
-              <button class="hotel-card__button button" type="button">В избранное</button>
+              <p class="hotel-card__type hotel-card__text">Гостиница</p>
+              <p class="hotel-card__price hotel-card__text">От 1500 ₽</p>
+              <a class="hotel-card__button hotel-card__details" href="#">Подробнее</a>
+              <button class="hotel-card__button hotel-card__button-add button" type="button">В избранное</button>
               <div class="hotel-card__rating">
                 <span class="hotel-card__rating-svg"></span>
                 <p class="hotel-card__rating-text">Рейтинг: 5,0</p>
@@ -221,27 +221,27 @@
         <section class="pagination">
           <div class="pagination__wrapper">
             <h2 class="visually-hidden"> Пагинация</h2>
-            <ul class="pagination__list">
+            <ul class="pagination__list list">
               <li class="pagination__item pagination__item--active">
                 1
               </li>
               <li class="pagination__item">
-                <a class="pagination__link" href="#">
+                <a class="pagination__link link" href="#">
                   2
                 </a>
               </li>
               <li class="pagination__item">
-                <a class="pagination__link" href="#">
+                <a class="pagination__link link" href="#">
                   3
                 </a>
               </li>
               <li class="pagination__item">
-                <a class="pagination__link" href="#">
+                <a class="pagination__link link" href="#">
                   4
                 </a>
               </li>
               <li class="pagination__item">
-                <a class="pagination__link" href="#">
+                <a class="pagination__link link" href="#">
                   10
                 </a>
               </li>
@@ -268,7 +268,7 @@
           </div>
         </section>
         <div class="social footer__social">
-          <ul class="social__list">
+          <ul class="social__list list">
             <li class="social__item">
               <a class="social__link link" href="https://vk.com/htmlacademy" target="_blank">
                 <span class="visually-hidden">Мы Вконтакте</span>
