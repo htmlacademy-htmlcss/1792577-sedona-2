@@ -1,0 +1,275 @@
+@font-face {
+    font-family: "PT Sans";
+    src: url("fonts/ptsans-400.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "PT Sans";
+    src: url("fonts/ptsans-400.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  body {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+  }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  .title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    }
+
+    .text {
+    text-align: center;
+    }
+
+    .link {
+      text-decoration: none;
+      color: rgba(0, 0, 0, 1);
+    }
+
+    .list {
+      list-style-type: none;
+    }
+
+/*Навигация*/
+
+.header__nav-list {
+font-size: 20px;
+font-weight: 700;
+line-height: 24px;
+text-align: left;
+}
+
+.header__user-menu-button {
+font-size: 16px;
+font-weight: 700;
+line-height: 20px;
+text-transform: uppercase;
+}
+
+/*Основной контент Index*/
+
+.main__greetings-container{
+  background-color: lightgray;
+  background-image: url("../image/divider.svg"), url("../image/index-background.jpg") ;
+  background-repeat: no-repeat no-repeat;
+  background-size: 100% 100%;
+  background-position: 0px 222px, 0 0
+}
+
+
+.main__greetings-img {
+  padding-top: 51px;
+  padding-bottom: 82px;
+  margin: 0 auto;
+  display: block;
+}
+
+/*Блок причины поездки*/
+.main__reason-box-title {
+font-size: 24px;
+line-height: 28px;
+text-align: center;
+}
+
+.main__reason-box-text {
+font-size: 18px;
+line-height: 21px;
+text-align: center;
+}
+
+/*Блок рекомендаций к поездке*/
+.recomendation__title{
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.recomendation__text{
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.home {
+  background-image: url("../image/reasons-icon/home.svg");
+  background-repeat: no-repeat;
+}
+
+.food {
+  background-image: url("../image/reasons-icon/food.svg");
+  background-repeat: no-repeat;
+}
+
+.present {
+  background-image: url("../image/reasons-icon/present.svg");
+  background-repeat: no-repeat;
+}
+/*Блок поиска гостиниц в Index*/
+.search__button {
+font-size: 20px;
+font-weight: 700;
+line-height: 36px;
+text-align: center;
+text-transform: uppercase;
+}
+
+/*Основной контент Catalog*/
+ /*Настройки поиска гостиниц*/
+
+ .hotel {
+  background-color: lightgray;
+  background-image: url("../image/catalog-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  min-height: 476px;
+ }
+
+.hotel__title {
+font-size: 60px;
+line-height: 78px;
+text-align: left;
+text-transform: none;
+}
+
+.hotel__breadcrumbs-item {
+font-size: 16px;
+line-height: 21px;
+text-align: left;
+}
+
+.checkbox__title {
+  font-size: 20px;
+  line-height: 24px;
+  text-align: left;
+  text-transform: none;
+}
+
+.checkbox__input{
+font-size: 18px;
+line-height: 23px;
+}
+
+.radio__title {
+  font-size: 20px;
+  line-height: 24px;
+  text-align: left;
+  text-transform: none;
+}
+
+.radio__input{
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.slider__title {
+  font-size: 20px;
+  line-height: 24px;
+  text-align: left;
+  text-transform: none;
+}
+
+.send__button {
+font-size: 16px;
+font-weight: 700;
+line-height: 20px;
+text-align: center;
+text-transform: uppercase;
+}
+
+/*Каталог гостиниц */
+.filter__title {
+font-size: 30px;
+line-height: 36px;
+text-transform: uppercase;
+}
+
+.filter__option-filter{
+font-size: 18px;
+line-height: 21px;
+}
+
+
+/*Карточкa отеля*/
+
+.hotel-card__title {
+font-size: 24px;
+line-height: 28px;
+text-transform: none;
+}
+
+.hotel-card__text {
+font-size: 18px;
+line-height: 21px;
+}
+
+.hotel-card__button {
+font-size: 16px;
+font-weight: 700;
+line-height: 20px;
+text-align: center;
+text-transform: uppercase;
+}
+
+.hotel-card__rating-text {
+font-size: 16px;
+font-weight: 400;
+line-height: 20px;
+text-transform: uppercase;
+}
+
+/*Пагинация*/
+
+.pagination__item {
+font-size: 20px;
+font-weight: 700;
+line-height: 36px;
+}
+
+/*Подвал*/
+
+/*Блок подписки на рассылку*/
+.footer__subscription-index{
+  background-color: lightgray;
+  background-image: url("../image/subscribe.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  min-height: 485px;
+}
+
+.subscription__button {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.phone__link{
+font-size: 40px;
+line-height: 40px;
+}
