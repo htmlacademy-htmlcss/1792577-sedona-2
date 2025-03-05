@@ -11,7 +11,7 @@
   <body>
     <div class="page-container">
       <!--Шапка-->
-      <header class="header">
+      <header class="header" data-test="header">
         <div class="header__wrapper">
           <a class="header__logo" href="#">
             <img class="header__logo-img" alt="Логотип сайта" src="image/logo.svg" width="140" height="70">
@@ -163,7 +163,8 @@
               </form>
             </div>
           </section>
-          <section class="filter" data-test="catalog">
+          <div data-test="catalog">
+          <section class="filter">
             <div class="filter__wrapper">
               <h2 class="filter__title title"> Найдено гостиниц: <span class="filter__result-surtch">38</span></h2>
               <select class="filter__option" name="sort">
@@ -189,7 +190,7 @@
               </div>
             </div>
           </section>
-          <section class="hotel-list" data-test="catalog">
+          <section class="hotel-list">
             <div class="hotel-list__wrapper">
               <h2 class="visually-hidden">Найденые отели</h2>
               <div class="hotel-card">
@@ -290,7 +291,7 @@
               </div>
             </div>
           </section>
-          <section class="pagination" data-test="catalog">
+          <section class="pagination">
             <div class="pagination__wrapper">
               <h2 class="visually-hidden"> Пагинация</h2>
               <ul class="pagination__list list">
@@ -323,6 +324,7 @@
               </ul>
             </div>
           </section>
+          </div>
 
         </div>
       </main>
