@@ -11,7 +11,7 @@
   <body>
     <div class="page-container">
       <!--Шапка-->
-      <header class="header">
+      <header class="header" data-test="header">
         <div class="header__wrapper">
           <a class="header__logo" href="#">
             <img class="header__logo-img" alt="Логотип сайта" src="image/logo.svg" width="140" height="70">
@@ -62,21 +62,21 @@
         </div>
       </header>
       <!--Основной контент страницы-->
-      <main class="main">
+      <main class="main" data-test="main">
         <div class="main__wrapper">
-          <div class="main__greetings-container">
+          <div class="main__greetings-container" data-test="hero">
             <img class="main__greetings-img" src="image/welcome.svg" alt="Приветствующая надпись на фоне каньона Седоны"
               width="458" height="352">
             <h1 class="visually-hidden">Седона</h1>
           </div>
-          <section class="main__discription container">
+          <section class="main__discription container" data-test="advantages">
             <div class="main__discription-container container__wrapper">
               <h2 class="main__discription-header title">Седона — небольшой городок в Аризоне, заслуживающий большего!
               </h2>
               <p class="main__discription-text text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
             </div>
           </section>
-          <section class="main__reason">
+          <section class="main__reason" data-test="advantages">
             <h2 class="visually-hidden">Причины посетить Седону</h2>
             <div class="main__reason-box-with-photo">
               <div class="main__reason-box">
@@ -111,13 +111,13 @@
               <img alt="Фотография каньона Седоны" src="image/bridge.jpg" width="800" height="385">
             </div>
           </section>
-          <section class="main__discription call container">
+          <section class="main__discription call container" data-test="service">
             <div class="main__discription-container call__container container__wrapper">
               <h2 class="main__discription-title call__title title">Приезжайте в Седону отдохнуть <br> в комфорте и уюте!</h2>
               <p class="main__discription-text call__text text">Опытный персонал и качественное обслуживание!</p>
             </div>
           </section>
-          <section class="recomendation">
+          <section class="recomendation" data-test="service">
             <h2 class="visually-hidden">Наши рекомендации о Седоне</h2>
             <div class="recomendation__box home icon-position">
               <h3 class="recomendation__title title">Жильё</h3>
@@ -134,7 +134,7 @@
                 но и настоящего местного производства!</p>
             </div>
           </section>
-          <section class="search container">
+          <section class="search container" data-test="search">
             <div class="search__container container__wrapper">
               <h2 class="search__title title">Заинтересовались?</h2>
               <p class="search__text text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения
@@ -166,7 +166,7 @@
               </form>
             </div>
           </section>
-          <section class="footer__contact contact">
+          <section class="footer__contact contact" data-test="footer" >
             <h2 class="visually-hidden">Наши контакты</h2>
             <div class="social footer__social">
               <ul class="social__list list">

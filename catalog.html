@@ -62,7 +62,7 @@
         </div>
       </header>
       <!--Основной контент страницы-->
-      <main class="main">
+      <main class="main" data-test="main">
         <div class="main__wrapper">
           <section class="hotel">
             <div class="hotel__wrapper">
@@ -84,7 +84,7 @@
                     Гостиницы
                   </a></li>
               </ul>
-              <form class="hotel__form form" action="https://echo.htmlacademy.ru" method="post">
+              <form class="hotel__form form" action="https://echo.htmlacademy.ru" method="post" data-test="filter">
                 <span class="visually-hidden">Фильтр гостиниц</span>
                 <fieldset class="checkbox hotel__form-checkbox fieldset-style">
                   <legend class="checkbox__title form__title title">Инфраструктура:</legend>
@@ -163,7 +163,7 @@
               </form>
             </div>
           </section>
-          <section class="filter">
+          <section class="filter" data-test="catalog">
             <div class="filter__wrapper">
               <h2 class="filter__title title"> Найдено гостиниц: <span class="filter__result-surtch">38</span></h2>
               <select class="filter__option" name="sort">
@@ -189,7 +189,7 @@
               </div>
             </div>
           </section>
-          <section class="hotel-list">
+          <section class="hotel-list" data-test="catalog">
             <div class="hotel-list__wrapper">
               <h2 class="visually-hidden">Найденые отели</h2>
               <div class="hotel-card">
@@ -290,7 +290,7 @@
               </div>
             </div>
           </section>
-          <section class="pagination">
+          <section class="pagination" data-test="catalog">
             <div class="pagination__wrapper">
               <h2 class="visually-hidden"> Пагинация</h2>
               <ul class="pagination__list list">
@@ -329,7 +329,7 @@
       <!--Подвал-->
       <footer class="footer">
         <div class="footer__wrapper">
-          <section class="footer__subscription subscription">
+          <section class="footer__subscription subscription" data-test="subscribe">
             <div class="subscription__wrapper container__wrapper">
               <div class="subscription__discription-box">
               <h2 class="subscription__title title">Подпишитесь на рассылку</h2>
@@ -345,7 +345,7 @@
               </form>
             </div>
           </section>
-          <section class="footer__contact contact">
+          <section class="footer__contact contact" data-test="footer" >
             <h2 class="visually-hidden">Наши контакты</h2>
             <div class="social footer__social">
               <ul class="social__list list">
