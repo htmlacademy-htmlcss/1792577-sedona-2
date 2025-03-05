@@ -1216,7 +1216,7 @@ body {
 /*Блок подписки на рассылку*/
 .footer__subscription-index {
   background-color: #d3d3d3;
-  background-image: url("../image/subscribe.jpg");
+  background-image: url("../image/background-subscribe.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: #ffffff;
