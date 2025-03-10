@@ -32,7 +32,7 @@
           <div class="header__user-menu">
             <ul class="header__user-menu-list list">
               <li class="header__user-menu-item header__user-menu-item-icon">
-                <a class="header__user-menu-link user-search" href="#">
+                <a class="header__user-menu-link-icon user-search" href="#">
                   <span class="visually-hidden">Поиск</span>
                   <svg class="header__user-menu-icon icon-search" width="20" height="20" viewBox="0 0 20 20" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -43,7 +43,7 @@
                 </a>
               </li>
               <li class="header__user-menu-item header__user-menu-item-icon">
-                <a class="header__user-menu-link user-favorites" href="#">
+                <a class="header__user-menu-link-icon user-favorites" href="#">
                   <span class="visually-hidden">Избранное</span>
                   <svg class="header__user-menu-icon icon-like" width="18" height="17" viewBox="0 0 18 17" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -85,21 +85,21 @@
                   <h3 class="main__reason-box-title  title">Настоящий городок</h3>
                   <p class="main__reason-box-text text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
                 </div>
-                <img alt="Фотография улицы Седоны" src="image/town.jpg" width="800" height="385">
+                <img class="main__reason-box-img" alt="Фотография улицы Седоны" src="image/town.jpg" width="800" height="385">
               </div>
               <div class="main__reason-box-not-photo">
                 <div class="main__reason-box">
-                  <h3 class="main__reason-box-title title">Небольшая <br>
+                  <h3 class="main__reason-box-title main__reason-box-not-photo-title title">Небольшая <br>
                     площадь</h3>
                   <p class="main__reason-box-text text">Все достопримечательности находятся очень близко</p>
                 </div>
                 <div class="main__reason-box">
-                  <h3 class="main__reason-box-title title">Красивая <br>
+                  <h3 class="main__reason-box-title main__reason-box-not-photo-title title">Красивая <br>
                     дорога</h3>
                   <p class="main__reason-box-text text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                 </div>
                 <div class="main__reason-box ">
-                  <h3 class="main__reason-box-title title">Мало <br>
+                  <h3 class="main__reason-box-title main__reason-box-not-photo-title title">Мало <br>
                     туристов</h3>
                   <p class="main__reason-box-text text">Большинство едет в Гранд Каньон и толпится там</p>
                 </div>
@@ -110,7 +110,7 @@
                     мост дьявола</h3>
                   <p class="main__reason-box-text text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
                 </div>
-                <img alt="Фотография каньона Седоны" src="image/bridge.jpg" width="800" height="385">
+                <img  class="main__reason-box-img" alt="Фотография каньона Седоны" src="image/bridge.jpg" width="800" height="385">
               </div>
             </section>
           </div>
@@ -164,12 +164,12 @@
                 </p>
               </div>
               <form class="subscription__form" action="https://echo.htmlacademy.ru" method="post">
-                <div class="subscription__box">
+
                   <label class="visually-hidden" for="e-mail">Введите e-mail</label>
                   <input class="subscription__email input-style" type="text" id="e-mail" name="e-mail"
                     placeholder="Ваш e-mail" required>
                   <button class="subscription__button button light-button" type="submit">Подписаться</button>
-                </div>
+
               </form>
             </div>
           </section>
@@ -203,11 +203,9 @@
                   <a class="social__link link" href="https://www.youtube.com/user/htmlacademyru" target="_blank"
                     rel="noreferrer noopener">
                     <span class="visually-hidden">Мы на YouTube</span>
-                    <svg class="social__icon youtube " xmlns="http://www.w3.org/2000/svg" width="48" height="41"
-                      fill="none">
-                      <path fill="currentColor"
-                        d="M31.94 12.36H16.51c-1.86 0-3.18 1.59-3.18 3.4v10.09c0 1.91 1.32 3.5 3.18 3.5h15.65c1.64 0 3.17-1.59 3.17-3.4v-10.2c-.22-1.8-1.53-3.4-3.39-3.4ZM20.99 24.89v-8.07l7.34 4.04-7.34 4.03Z" />
-                    </svg>
+                    <svg class="social__icon youtube"  width="23" height="18" viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M18.9402 0.356445H3.50738C1.64668 0.356445 0.333252 1.9502 0.333252 3.75645V13.8502C0.333252 15.7627 1.64668 17.3564 3.50738 17.3564H19.1591C20.8009 17.3564 22.3333 15.7627 22.3333 13.9564V3.75645C22.1143 1.9502 20.8009 0.356445 18.9402 0.356445ZM7.99494 12.8939V4.81894L15.3283 8.85645L7.99494 12.8939Z" fill="currentColor"/>
+                      </svg>
                   </a>
                 </li>
               </ul>
@@ -229,6 +227,7 @@
         </div>
       </footer>
       <section class="modal">
+        <div class="modal__container">
         <div class="modal-wrapper">
           <div class="modal-header">
             <h2 class="modal-title title">Поиск гостиницы в Седоне</h2>
@@ -242,24 +241,27 @@
               <label class="arivial-label modal__label-data" for="arrival-data">
                 <span class="arrival-text modal__text text">Дата Заезда:</span>
               </label>
+              <div class="modal__input-container">
               <input class="arrival-input modal__input input" type="text" id="arrival-data" name="arrival-data"
                 value="27 апреля 2020">
               <span class="modal__open-calendar">
                 <button class="modal__calendar-button calendar" type="button">
                 </button>
               </span>
-
+              </div>
               <span class="arrival-error modal__info error">Мы не можем отправить вас в прошлое.</span>
             </div>
             <div class="exit modal__data">
               <label class="exit-label modal__label-data">
                 <span class="exit-text modal__text text">Дата Выезда:</span>
               </label>
+              <div class="modal__input-container">
               <input class="exit-input modal__input input" type="text" name="arrival-data" value="1 сентября 2023">
               <span class="modal__open-calendar">
                 <button class="modal__calendar-button calendar" type="button">
                 </button>
               </span>
+              </div>
               <span class="exit-error modal__info">На эти даты есть свободные номера. Пока есть.</span>
             </div>
             <div class="modal__people people">
@@ -314,7 +316,7 @@
             </div>
             <button class="modal-button light-button button" type="button">Найти</button>
           </form>
-
+        </div>
         </div>
       </section>
     </div>
