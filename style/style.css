@@ -259,12 +259,11 @@ body {
   font-weight: 700;
   line-height: 24px;
   text-align: left;
-  padding: 13px 5px 0;
-  margin: auto 0 auto 85px;
+  margin: auto 0 auto 90px;
 }
 
   .header__nav-link {
-    padding: 5px 16px 22px;
+    padding: 18px 16px 22px;
     position: relative;
     display: inline-block;
   }
@@ -294,11 +293,12 @@ body {
   color: #ffffff;
   max-width: 160px;
   cursor: pointer;
+  margin-bottom: 5px;
 }
 
 .header__user-menu-link-icon {
   color: inherit;
-  padding: 0 13px;
+  padding: 17px 13px;
 }
 
 
@@ -319,16 +319,11 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 4px 0;
-  margin: auto;
+  margin-top: 5px;
 }
 
 .header__user-menu-item:nth-child(2) {
   padding-right: 20px;
-}
-
-.header__user-menu-item-icon {
-  padding-top: 4px;
 }
 
 .user-favorites {
@@ -342,8 +337,8 @@ body {
   height: 20px;
   border-radius: 10px;
   font-size: 10px;
-  top: -8px;
-  right: 3px;
+  top: 8px;
+  right: 5px;
   line-height: 20px;
   text-align: center;
   color: #ffffff;
@@ -498,7 +493,8 @@ body {
 
 .main__reason-box-img {
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .call {
@@ -511,14 +507,16 @@ body {
 
 /*Блок рекомендаций к поездке*/
 
-.recomendation {
+.recomendation__list {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
+  padding: 0;
+  margin: 0;
 }
 
-.recomendation__box {
+.recomendation__item{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -633,8 +631,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  max-width: 170px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   position: relative;
   margin: 0 0 41px;
 }
@@ -815,11 +813,13 @@ cursor: pointer;
 }
 
 .slider-placeholder-min {
-  left: 106px;
+ right: 167px;
+ overflow: hidden;
 }
 
 .slider-placeholder-max {
   right: 20px;
+  overflow: hidden;
 }
 
 .slider__input-min {
@@ -1000,7 +1000,7 @@ cursor: pointer;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  margin: 0 132px 12px 0;
+  margin: 0 152px 12px 0;
   padding-top: 7px;
 }
 
@@ -1016,6 +1016,7 @@ cursor: pointer;
   min-width: 292px;
   max-block-size: 49px;
   margin: 0;
+  margin-right: 20px;
   padding: 13px 18px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1034,8 +1035,11 @@ cursor: pointer;
 .filter__show-list {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  flex-wrap: wrap;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 8px 1fr 8px 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px;
   max-width: 160px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -1063,10 +1067,11 @@ cursor: pointer;
   border-color: #000000;
 }
 
+/*
 .filter__show-item:not(:last-child) {
   margin-right: 8px;
 }
-
+*/
 .filter__show-button:hover {
   border-color: #000000;
 }
@@ -1115,7 +1120,7 @@ cursor: pointer;
   padding: 0 70px;
   min-width: 80%;
   position: relative;
-  margin-bottom: 77px;
+  margin-bottom: 82px;
 }
 
 .hotel-list::after {
@@ -1178,7 +1183,11 @@ cursor: pointer;
 .hotel-card__button-container {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+      -ms-grid-columns: 1fr 20px 1fr;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
   justify-content: space-between;
@@ -1206,7 +1215,6 @@ cursor: pointer;
   text-transform: uppercase;
   border-radius: 4px;
   color: #ffffff;
-  padding: 8px 20px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -1226,6 +1234,8 @@ cursor: pointer;
   border-radius: 4px;
   max-width: 140px;
   padding: 8px 22px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 
@@ -1262,11 +1272,11 @@ cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  max-width: 412px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 0 70px;
   color: #ffffff;
-  margin-bottom: 60px;
+  margin-bottom: 55px;
 }
 
 .pagination__link {
@@ -1278,8 +1288,8 @@ cursor: pointer;
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
-  width: 60px;
-  height: 60px;
+  min-width: 60px;
+  min-height: 60px;
   background-color: #82b3d3;
   border-radius: 4px;
   -webkit-box-sizing: border-box;
@@ -1288,6 +1298,7 @@ cursor: pointer;
   text-align: center;
   padding: 10px;
   cursor: pointer;
+  margin-bottom: 5px;
 }
 
 .pagination__item:not(:last-child) {
@@ -1423,9 +1434,15 @@ cursor: pointer;
 }
 
 .social__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 40px;
   height: 40px;
 }
@@ -1514,6 +1531,8 @@ outline: none;
 }
 
 .modal__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: fixed;
   top:0;
@@ -1526,7 +1545,8 @@ outline: none;
 .modal-wrapper {
   position: relative;
   background-color: #ffffff;
-  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
   margin: auto;
   width: 717px;
   min-height: 576px;
@@ -1592,7 +1612,9 @@ outline: none;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 2fr;
   grid-template-columns: 1fr 2fr;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -1670,6 +1692,7 @@ outline: none;
   left: 157px;
   margin-left: 20px;
   margin-top: 4px;
+  -ms-grid-column: 2;
   grid-column: 2;
 }
 
