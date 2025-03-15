@@ -6,6 +6,7 @@
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="style/style.css">
     <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="image/favicon32x32.png">
   </head>
 
   <body>
@@ -245,7 +246,7 @@
               </label>
               <div class="modal__input-container">
               <input class="arrival-input modal__input input" type="text" id="arrival-data" name="arrival-data"
-                value="27 апреля 2020">
+                value="27 апреля 2020"  required>
               <span class="modal__open-calendar">
                 <button class="modal__calendar-button calendar" type="button">
                 </button>
@@ -254,11 +255,11 @@
               <span class="arrival-error modal__info error">Мы не можем отправить вас в прошлое.</span>
             </div>
             <div class="exit modal__data">
-              <label class="exit-label modal__label-data">
+              <label class="exit-label modal__label-data" for="arrival">
                 <span class="exit-text modal__text text">Дата Выезда:</span>
               </label>
               <div class="modal__input-container">
-              <input class="exit-input modal__input input" type="text" name="arrival-data" value="1 сентября 2023">
+              <input class="exit-input modal__input input" id="arrival" type="text" name="arrival-data" value="1 сентября 2023"  required>
               <span class="modal__open-calendar">
                 <button class="modal__calendar-button calendar" type="button">
                 </button>
@@ -278,7 +279,7 @@
                       <path d="M0 0L0 2L14 2V0L0 0Z" fill="currentColor" />
                     </svg>
                   </button>
-                  <input class="modal__counter-text" type="text" name="quantity" id="aduits" value="2" size="20">
+                  <input class="modal__counter-text" type="text" name="quantity" id="aduits" value="2" size="20" required>
                   <button class="modal__counter-sign plus" type="button">
                     <svg class="modal__counter-icon-plus" width="14" height="14" viewBox="0 0 14 14" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
